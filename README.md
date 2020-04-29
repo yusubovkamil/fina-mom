@@ -1,5 +1,6 @@
 # fina-mom
-# Momentum Trading Strategy 
+# Momentum Trading Strategy, based on hostorical returns of Miscrisoft
+
 
 # Data
 In order to prepare the data for our analysis, we imported pandas, numpy, matplotlib and statsmodel. Then, we import the CRSP file which holds stock data and the FF file to get the three factor model data and the risk free rate. Further, we set the data in an exploitable format and calculate the past 12 month rolling returns for each month. Next, we form portfolios for every month, a portfolio consisting of different stocks and divide those into 10 groups. We shift two months backward to be certain that we use previous returns to predict future returns. We then merge the previous data and the portfolios, this is the final step in our data set creation.
